@@ -49,7 +49,7 @@ PDF-to-TIFF-Pipeline-Python/
 
 ## 🔧 Como usar
 
-1. Edite o script `converter.py` e defina:
+1. Edite o script `converter-pdf.py` e defina:
    - Caminho dos executáveis (`GHOSTSCRIPT`, `IMAGEMAGICK`, `MUTOOL`, `PDFINFO`);
    - Caminho dos perfis ICC (`ICC_INPUT_RGB`, `ICC_OUTPUT_CMYK`);
    - Lista de pastas em `PASTAS_RAIZES`.
@@ -57,7 +57,7 @@ PDF-to-TIFF-Pipeline-Python/
 2. Execute com:
 
 ```bash
-python converter.py
+python converter-pdf.py
 ```
 
 O script ficará em execução contínua, monitorando as pastas e processando novos PDFs.
@@ -69,7 +69,7 @@ O script ficará em execução contínua, monitorando as pastas e processando no
 Este script pode ser chamado a partir de outro pipeline em PowerShell, por exemplo:
 
 ```powershell
-Start-Process -FilePath "python.exe" -ArgumentList "converter.py"
+Start-Process -FilePath "python.exe" -ArgumentList "converter-pdf.py"
 ```
 
 Permite integração híbrida entre o tratamento de arquivos com `robocopy`, geração de logs em CSV e dashboards, ou execução sequencial após o preflight automatizado.
