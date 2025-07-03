@@ -80,7 +80,7 @@ Permite integração híbrida entre o tratamento de arquivos com `robocopy`, ger
 
 - O script ignora arquivos já convertidos para evitar retrabalho;
 - PDFs inválidos ou com fontes ausentes são registrados em arquivos `.txt` na pasta do arquivo;
-- Proporções maiores que 10:1 são ignoradas automaticamente;
+- Proporções maiores que 10:1 são ignoradas automaticamente para evitar discrepâncias no cálculo da resolução;
 - PDFs com “camisa” no nome (em subpastas de "Sign - Sublimação") são exportados com 100 DPI automaticamente.
 
 ---
